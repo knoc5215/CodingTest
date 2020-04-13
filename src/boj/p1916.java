@@ -1,4 +1,4 @@
-package boj.dijkstra;
+package boj;
 
 import java.util.*;
 

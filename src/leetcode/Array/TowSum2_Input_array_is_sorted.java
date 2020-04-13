@@ -1,6 +1,5 @@
 package leetcode.Array;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class TowSum2_Input_array_is_sorted {
