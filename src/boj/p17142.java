@@ -7,13 +7,13 @@ public class p17142 {
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
     static int[][] map, check;
-    static int emptySpace = 0;
-    static int result = Integer.MAX_VALUE;
-    static boolean[] VirusIndex;
-    static List<Virus> virusList;
+        static int emptySpace = 0;
+        static int result = Integer.MAX_VALUE;
+        static boolean[] VirusIndex;
+        static List<Virus> virusList;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
         M = sc.nextInt();
         map = new int[N][N];

@@ -106,7 +106,7 @@ public class p17779 {
         }
     }
 
-    // 4번 선거구: x+d2 < r ≤ N, y-d1+d2 ≤ c ≤ N
+    // 4번 선거구: x+d2 < r ≤ N, y-d1+d2 ≤ c ≤ N9
     public static void sum4(int x, int y, int d1, int d2) {
         for (int r = x + d2 + 1; r <= N; r++) {
             for (int c = y - d1 + d2; c <= N; c++) {
