@@ -1,4 +1,4 @@
-package Kakao_Blind_2020;
+package kakao.test_2020;
 
 public class p1 {
     public static void main(String[] args) {

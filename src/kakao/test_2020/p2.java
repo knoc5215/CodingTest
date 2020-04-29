@@ -1,4 +1,5 @@
-package Kakao_Blind_2020;
+package kakao.test_2020;
+
 
 import java.util.Stack;
 
