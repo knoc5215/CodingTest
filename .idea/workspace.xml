@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f46763c1-a626-4c8b-81d6-fa5de90597b8" name="Default Changelist" comment="백준 우선순위 큐">
-      <change afterPath="$PROJECT_DIR$/src/boj/p2075.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boj/p2096.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.p2075">
+  <component name="RunManager" selected="Application.p2096">
     <configuration name="p16562" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj.p16562" />
       <module name="CodingTest" />
@@ -76,13 +76,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="p1976" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.p1976" />
-      <module name="CodingTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +106,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="p2096" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.p2096" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="p4195" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj.p4195" />
       <module name="CodingTest" />
@@ -122,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p2096" />
         <item itemvalue="Application.p2075" />
         <item itemvalue="Application.p2003" />
         <item itemvalue="Application.p16562" />
         <item itemvalue="Application.p4195" />
-        <item itemvalue="Application.p1976" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +149,7 @@
       <workItem from="1589554455887" duration="1166000" />
       <workItem from="1589605963626" duration="1234000" />
       <workItem from="1589607306102" duration="3008000" />
-      <workItem from="1589610530647" duration="2591000" />
+      <workItem from="1589610530647" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="kakao 2020 solve START">
       <created>1578384444839</created>
@@ -201,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589612277805</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="백준 우선순위 큐">
+      <created>1589613967976</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589613967976</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,29 +281,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587999097189" />
-    <state width="745" height="239" key="GridCell.Tab.0.bottom" timestamp="1589613048917">
+    <state width="745" height="239" key="GridCell.Tab.0.bottom" timestamp="1589616843264">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1589613048917" />
+    <state width="745" height="239" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1589616843264" />
     <state width="745" height="241" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="745" height="239" key="GridCell.Tab.0.center" timestamp="1589613048916">
+    <state width="745" height="239" key="GridCell.Tab.0.center" timestamp="1589616843263">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1589613048916" />
+    <state width="745" height="239" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="745" height="239" key="GridCell.Tab.0.left" timestamp="1589613048915">
+    <state width="745" height="239" key="GridCell.Tab.0.left" timestamp="1589616843263">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1589613048915" />
+    <state width="745" height="239" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1589610519625" />
-    <state width="745" height="239" key="GridCell.Tab.0.right" timestamp="1589613048916">
+    <state width="745" height="239" key="GridCell.Tab.0.right" timestamp="1589616843263">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1589613048916" />
+    <state width="745" height="239" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
     <state x="99" y="271" key="NewModule_or_Project.wizard" timestamp="1589554831131">
       <screen x="0" y="23" width="1680" height="969" />
