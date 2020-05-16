@@ -16,11 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f46763c1-a626-4c8b-81d6-fa5de90597b8" name="Default Changelist" comment="백준 우선순위 큐">
-      <change afterPath="$PROJECT_DIR$/src/boj/p2096.java" afterDir="false" />
+    <list default="true" id="f46763c1-a626-4c8b-81d6-fa5de90597b8" name="Default Changelist" comment="백준 dp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +155,7 @@
       <workItem from="1589554455887" duration="1166000" />
       <workItem from="1589605963626" duration="1234000" />
       <workItem from="1589607306102" duration="3008000" />
-      <workItem from="1589610530647" duration="5500000" />
+      <workItem from="1589610530647" duration="6131000" />
     </task>
     <task id="LOCAL-00001" summary="kakao 2020 solve START">
       <created>1578384444839</created>
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589613967976</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="백준 dp">
+      <created>1589616973633</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589616973633</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +248,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -250,7 +275,8 @@
     <MESSAGE value="백준 disjoint-set 친구비" />
     <MESSAGE value="백준 two pointer" />
     <MESSAGE value="백준 우선순위 큐" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 우선순위 큐" />
+    <MESSAGE value="백준 dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 dp" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1584853670215">
@@ -281,29 +307,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587999097189" />
-    <state width="745" height="239" key="GridCell.Tab.0.bottom" timestamp="1589616843264">
+    <state width="745" height="239" key="GridCell.Tab.0.bottom" timestamp="1589616989789">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1589616843264" />
+    <state width="745" height="239" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1589616989789" />
     <state width="745" height="241" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="745" height="239" key="GridCell.Tab.0.center" timestamp="1589616843263">
+    <state width="745" height="239" key="GridCell.Tab.0.center" timestamp="1589616989788">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
+    <state width="745" height="239" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1589616989788" />
     <state width="745" height="241" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="745" height="239" key="GridCell.Tab.0.left" timestamp="1589616843263">
+    <state width="745" height="239" key="GridCell.Tab.0.left" timestamp="1589616989788">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
+    <state width="745" height="239" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1589616989788" />
     <state width="745" height="241" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1589610519625" />
-    <state width="745" height="239" key="GridCell.Tab.0.right" timestamp="1589616843263">
+    <state width="745" height="239" key="GridCell.Tab.0.right" timestamp="1589616989789">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state width="1044" height="249" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
-    <state width="745" height="239" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
+    <state width="745" height="239" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1589616989789" />
     <state width="745" height="241" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
     <state x="99" y="271" key="NewModule_or_Project.wizard" timestamp="1589554831131">
       <screen x="0" y="23" width="1680" height="969" />
@@ -314,10 +340,11 @@
     </state>
     <state x="681" y="115" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588575215540" />
     <state x="65" y="202" width="900" height="726" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1589610517930" />
-    <state x="395" y="194" key="Vcs.Push.Dialog.v2" timestamp="1589610345576">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="395" y="193" key="Vcs.Push.Dialog.v2" timestamp="1589617010778">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588171623206" />
+    <state x="395" y="193" key="Vcs.Push.Dialog.v2/0.23.1680.963@0.23.1680.963" timestamp="1589617010778" />
     <state x="395" y="194" key="Vcs.Push.Dialog.v2/0.23.1680.969@0.23.1680.969" timestamp="1589610345576" />
     <state x="113" y="32" width="1510" height="950" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589465539706">
       <screen x="0" y="0" width="1920" height="1040" />
