@@ -3,7 +3,6 @@ package boj;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 /*
     16562 친구비
@@ -13,7 +12,6 @@ public class p16562 {
     static int N, M, K;
     static int[] money;
     static int[] parent;
-    static boolean[] visit;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -40,17 +38,17 @@ public class p16562 {
             union(a, b);
         }
 
-        long allSum = 0;
+        long sum = 0;
         for (int i = 0; i < N; i++) {
             if (parent[i] == -1) {  // 루트가 -1인 친구한테 비용을 지불하면 다 연결되있으니까 가능
-                allSum += money[i];
+                sum += money[i];
             }
         }
 
-        if (allSum > K) {   // 초과하면
+        if (sum > K) {   // 초과하면
             System.out.println("Oh no");
         } else {    // 비용에 맞으면
-            System.out.println(allSum);
+            System.out.println(sum);
         }
     }
 
