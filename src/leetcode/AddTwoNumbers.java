@@ -20,7 +20,6 @@ public class AddTwoNumbers {
         System.out.println(sb.reverse());
     }
 
-
     /*
         leecode solution reference
      */
@@ -46,7 +45,6 @@ public class AddTwoNumbers {
         if (carry > 0) {
             curr.next = new ListNode(carry);
         }
-
         return dummyHead.next;
     }
 
