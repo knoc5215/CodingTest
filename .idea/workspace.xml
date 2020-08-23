@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -26,14 +29,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f46763c1-a626-4c8b-81d6-fa5de90597b8" name="Default Changelist" comment="leetcode - Top K Frequent Elements">
-      <change afterPath="$PROJECT_DIR$/src/boj/p2644.java" afterDir="false" />
+    <list default="true" id="f46763c1-a626-4c8b-81d6-fa5de90597b8" name="Default Changelist" comment="kakao blind 2020 문자열 압축">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,6 +52,9 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/programmers/kakao/p1_2020.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1RgI1G6j4R4ZPS5VX9fqg15xynR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -74,35 +82,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="Application.p2644">
-    <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.AddTwoNumbers" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.RomanToInteger" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.p1_2020">
     <configuration name="TopKFrequentElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.TopKFrequentElements" />
       <module name="CodingTest" />
@@ -116,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.ValidParentheses" />
+    <configuration name="p1_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programmers.kakao.p1_2020" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.*" />
+          <option name="PATTERN" value="programmers.kakao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,26 +124,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="p3_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programmers.kakao.p3_2020" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="programmers.kakao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="p4_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programmers.kakao.p4_2020" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="programmers.kakao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p1_2020" />
+        <item itemvalue="Application.p4_2020" />
+        <item itemvalue="Application.p3_2020" />
         <item itemvalue="Application.p2644" />
         <item itemvalue="Application.TopKFrequentElements" />
-        <item itemvalue="Application.AddTwoNumbers" />
-        <item itemvalue="Application.ValidParentheses" />
-        <item itemvalue="Application.RomanToInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +186,8 @@
       <workItem from="1589605963626" duration="1234000" />
       <workItem from="1589607306102" duration="3008000" />
       <workItem from="1589610530647" duration="5500000" />
-      <workItem from="1597641866741" duration="7774000" />
+      <workItem from="1597641866741" duration="9204000" />
+      <workItem from="1598096569894" duration="14046000" />
     </task>
     <task id="LOCAL-00001" summary="kakao 2020 solve START">
       <created>1578384444839</created>
@@ -273,7 +280,42 @@
       <option name="project" value="LOCAL" />
       <updated>1597646647308</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="boj - p2644 촌수계산 (bfs)">
+      <created>1597653491114</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597653491114</updated>
+    </task>
+    <task id="LOCAL-00015" summary="move dir">
+      <created>1598166265693</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1598166265693</updated>
+    </task>
+    <task id="LOCAL-00016" summary="kakao blind 2020 자물쇠와 열쇠">
+      <created>1598166281513</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1598166281513</updated>
+    </task>
+    <task id="LOCAL-00017" summary="kakao blind 2020 가사검색&#10;트라이 자료구조">
+      <created>1598166318630</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1598166318630</updated>
+    </task>
+    <task id="LOCAL-00018" summary="kakao blind 2020 문자열 압축">
+      <created>1598170790098</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1598170790098</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,61 +367,62 @@
     <MESSAGE value="leetcode - ValidParentheses" />
     <MESSAGE value="leetcode - AddTwoNumbers" />
     <MESSAGE value="leetcode - Top K Frequent Elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode - Top K Frequent Elements" />
+    <MESSAGE value="boj - p2644 촌수계산 (bfs)" />
+    <MESSAGE value="move dir" />
+    <MESSAGE value="kakao blind 2020 자물쇠와 열쇠" />
+    <MESSAGE value="kakao blind 2020 가사검색&#10;트라이 자료구조" />
+    <MESSAGE value="kakao blind 2020 문자열 압축" />
+    <option name="LAST_COMMIT_MESSAGE" value="kakao blind 2020 문자열 압축" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1043" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1597646274652">
+    <state x="1043" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1598163549681">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="1043" y="236" key="#com.intellij.ide.util.MemberChooser/0.23.1680.981@0.23.1680.981" timestamp="1597646274652" />
+    <state x="1043" y="236" key="#com.intellij.ide.util.MemberChooser/0.23.1680.981@0.23.1680.981" timestamp="1598163549681" />
     <state x="853" y="179" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1589610602903">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="853" y="179" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1680.969@0.23.1680.969" timestamp="1589610602903" />
-    <state width="797" height="263" key="GridCell.Tab.0.bottom" timestamp="1597653335304">
+    <state width="797" height="228" key="GridCell.Tab.0.bottom" timestamp="1598170588748">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state width="1044" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
     <state width="745" height="239" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1589616843264" />
     <state width="745" height="241" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="797" height="263" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1597653335304" />
-    <state width="797" height="263" key="GridCell.Tab.0.center" timestamp="1597653335303">
+    <state width="797" height="228" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1598170588748" />
+    <state width="797" height="228" key="GridCell.Tab.0.center" timestamp="1598170588747">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state width="1044" height="249" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
     <state width="745" height="239" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="797" height="263" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1597653335303" />
-    <state width="797" height="263" key="GridCell.Tab.0.left" timestamp="1597653335303">
+    <state width="797" height="228" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1598170588747" />
+    <state width="797" height="228" key="GridCell.Tab.0.left" timestamp="1598170588747">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state width="1044" height="249" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
     <state width="745" height="239" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1589610519625" />
-    <state width="797" height="263" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1597653335303" />
-    <state width="797" height="263" key="GridCell.Tab.0.right" timestamp="1597653335304">
+    <state width="797" height="228" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1598170588747" />
+    <state width="797" height="228" key="GridCell.Tab.0.right" timestamp="1598170588747">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state width="1044" height="249" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589466698303" />
     <state width="745" height="239" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1589616843263" />
     <state width="745" height="241" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1589610519626" />
-    <state width="797" height="263" key="GridCell.Tab.0.right/0.23.1680.981@0.23.1680.981" timestamp="1597653335304" />
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.bottom" timestamp="1597653336293">
+    <state width="797" height="228" key="GridCell.Tab.0.right/0.23.1680.981@0.23.1680.981" timestamp="1598170588747" />
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.bottom" timestamp="1598162217120">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.bottom/0.23.1680.981@0.23.1680.981" timestamp="1597653336293" />
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.center" timestamp="1597653336293">
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.bottom/0.23.1680.981@0.23.1680.981" timestamp="1598162217120" />
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.center" timestamp="1598162217120">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.center/0.23.1680.981@0.23.1680.981" timestamp="1597653336293" />
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.left" timestamp="1597653336292">
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.center/0.23.1680.981@0.23.1680.981" timestamp="1598162217120" />
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.left" timestamp="1598162217119">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.left/0.23.1680.981@0.23.1680.981" timestamp="1597653336292" />
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.right" timestamp="1597653336293">
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.left/0.23.1680.981@0.23.1680.981" timestamp="1598162217119" />
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.right" timestamp="1598162217120">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="489" y="98" width="797" height="263" key="GridCell.Tab.1.right/0.23.1680.981@0.23.1680.981" timestamp="1597653336293" />
+    <state x="489" y="98" width="933" height="431" key="GridCell.Tab.1.right/0.23.1680.981@0.23.1680.981" timestamp="1598162217120" />
     <state x="489" y="98" width="907" height="347" key="GridCell.Tab.2.bottom" timestamp="1597590616333">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
@@ -400,20 +443,16 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="99" y="271" key="NewModule_or_Project.wizard/0.23.1680.969@0.23.1680.969" timestamp="1589554831131" />
-    <state x="65" y="204" width="900" height="726" key="SettingsEditor" timestamp="1597590723167">
+    <state x="662" y="127" width="900" height="726" key="SettingsEditor" timestamp="1598170868295">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state x="65" y="202" width="900" height="726" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1589610517930" />
-    <state x="65" y="204" key="SettingsEditor/0.23.1680.981@0.23.1680.981" timestamp="1597590723167" />
-    <state x="395" y="196" key="Vcs.Push.Dialog.v2" timestamp="1597649497810">
+    <state x="662" y="127" key="SettingsEditor/0.23.1680.981@0.23.1680.981" timestamp="1598170868295" />
+    <state x="395" y="196" key="Vcs.Push.Dialog.v2" timestamp="1598166339829">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state x="395" y="194" key="Vcs.Push.Dialog.v2/0.23.1680.969@0.23.1680.969" timestamp="1589610345576" />
-    <state x="395" y="196" key="Vcs.Push.Dialog.v2/0.23.1680.981@0.23.1680.981" timestamp="1597649497810" />
-    <state x="113" y="32" width="1510" height="950" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589465539706">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="113" y="32" width="1510" height="950" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589465539706" />
+    <state x="395" y="196" key="Vcs.Push.Dialog.v2/0.23.1680.981@0.23.1680.981" timestamp="1598166339829" />
     <state x="638" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597591029416">
       <screen x="0" y="23" width="1680" height="981" />
     </state>
@@ -429,8 +468,11 @@
     <state x="991" y="135" width="568" height="752" key="find.popup" timestamp="1589607849406">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="1133" y="120" width="613" height="807" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589461388769" />
     <state x="991" y="135" width="568" height="752" key="find.popup/0.23.1680.969@0.23.1680.969" timestamp="1589607849406" />
+    <state x="925" y="239" width="690" height="676" key="search.everywhere.popup" timestamp="1598167105977">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="925" y="239" width="690" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1598167105977" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,11 +481,6 @@
           <url>file://$PROJECT_DIR$/src/leetcode/RomanToInteger.java</url>
           <line>12</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/boj/p2644.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
