@@ -1,16 +1,16 @@
-package programmers.kakao;
+package programmers.kakao_previous.blind_2018;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileNameSort_2018_Blind {
+public class FileNameSort {
     public static void main(String[] args) {
         String[] files = {"muzi00001"};
         String[] answer = solution(files);
     }
 
     public static String[] solution(String[] files) {
-        String[] answer = {};
+
 
         List<FileInfo> fileInfoList = new ArrayList<>();
         for (String fileName : files) {
@@ -30,7 +30,7 @@ public class FileNameSort_2018_Blind {
             }
         });
 
-        answer = new String[files.length];
+        String[] answer = new String[files.length];
         StringBuilder sb;
         for (int i = 0; i < answer.length; i++) {
             FileInfo fileInfo = fileInfoList.get(i);
@@ -45,7 +45,6 @@ public class FileNameSort_2018_Blind {
 
     static FileInfo getFileInfo(String fileName) {
         String head = "", number = "", tail = "";
-
 
         int numStart = -1;
         // HEAD는 숫자가 아닌 문자로 이루어져 있으며, 최소한 한 글자 이상이다.
@@ -75,17 +74,9 @@ public class FileNameSort_2018_Blind {
             }
         }
 
+        tail = (tailStart == -1) ? "" : fileName.substring(tailStart);
 
-        if (tailStart == -1) { // tail없이 마지막이 number로 끝난 경우
-            tail = "";
-        } else {    // 숫자 끝 다음부터 끝까지 substring
-            tail = fileName.substring(tailStart);
-        }
-
-
-        FileInfo fileInfo = new FileInfo(head, number, tail);
-//        System.out.println(fileInfo);
-        return fileInfo;
+        return new FileInfo(head, number, tail);
 
 
     }
@@ -103,24 +94,12 @@ public class FileNameSort_2018_Blind {
             return head;
         }
 
-        public void setHead(String head) {
-            this.head = head;
-        }
-
         public String getNumber() {
             return number;
         }
 
-        public void setNumber(String number) {
-            this.number = number;
-        }
-
         public String getTail() {
             return tail;
-        }
-
-        public void setTail(String tail) {
-            this.tail = tail;
         }
 
         @Override

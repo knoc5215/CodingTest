@@ -1,8 +1,8 @@
-package programmers.kakao;
+package programmers.kakao_previous.winter_2019;
 
 import java.util.HashSet;
 
-public class User_2019_Winter {
+public class User {
     static HashSet<HashSet<String>> answerSet;
     static int bannedLen;
     static int userLen;

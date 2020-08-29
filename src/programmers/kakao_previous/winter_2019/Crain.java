@@ -1,8 +1,8 @@
-package programmers.kakao;
+package programmers.kakao_previous.winter_2019;
 
 import java.util.Stack;
 
-public class Crain_2019_Winter {
+public class Crain {
     public static void main(String[] args) {
         int[][] board = {
                 {0, 0, 0, 0, 0},

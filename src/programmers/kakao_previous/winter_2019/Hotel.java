@@ -1,8 +1,8 @@
-package programmers.kakao;
+package programmers.kakao_previous.winter_2019;
 
 import java.util.*;
 
-public class Hotel_2019_Winter {
+public class Hotel {
     static Map<Long, Long> map = new HashMap<>();
 
     public static void main(String[] args) {

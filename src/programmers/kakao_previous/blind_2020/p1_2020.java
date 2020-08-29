@@ -1,4 +1,4 @@
-package programmers.kakao;
+package programmers.kakao_previous.blind_2020;
 
 /*
 문자열 압축

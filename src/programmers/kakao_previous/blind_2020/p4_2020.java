@@ -1,4 +1,4 @@
-package programmers.kakao;
+package programmers.kakao_previous.blind_2020;
 
 import java.util.ArrayList;
 import java.util.List;
