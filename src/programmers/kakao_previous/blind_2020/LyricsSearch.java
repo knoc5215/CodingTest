@@ -7,7 +7,7 @@ import java.util.List;
    가사에 사용된 모든 단어들이 담긴 배열 words와 찾고자 하는 키워드가 담긴 배열 queries가 주어질 때
    각 키워드 별로 매치된 단어가 몇 개인지 순서대로 배열에 담아 반환하도록 solution 함수를 완성해 주세요.
     */
-public class p4_2020 {
+public class LyricsSearch {
     public static void main(String[] args) {
         String[] words = {"frodo", "front", "frost", "frozen", "frame", "kakao"};
         String[] queries = {"fro??", "????o", "fr???", "fro???", "pro?"};
