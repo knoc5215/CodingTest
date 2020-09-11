@@ -11,7 +11,7 @@ abcabcabcabcdededededede
 문자열을 4개 단위로 자르면 abcabcabcabc3dede 가 됩니다.
 문자열을 6개 단위로 자를 경우 2abcabc2dedede가 되며, 이때의 길이가 14로 가장 짧습니다.
  */
-public class p1_2020 {
+public class StringCompression {
     public static void main(String[] args) {
         String s = "ababcdcdababcdcd";
         int ans = solution(s);
