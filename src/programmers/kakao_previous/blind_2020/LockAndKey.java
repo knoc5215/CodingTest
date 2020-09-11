@@ -3,7 +3,7 @@ package programmers.kakao_previous.blind_2020;
 /*
 자물쇠와 열쇠
  */
-public class p3_2020 {
+public class LockAndKey {
     static boolean answer = false;
 
     public static void main(String[] args) {
