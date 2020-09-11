@@ -3,7 +3,7 @@ package programmers.kakao_previous.blind_2018;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileNameSort {
+public class FileNameSort_3nd {
     public static void main(String[] args) {
         String[] files = {"muzi00001"};
         String[] answer = solution(files);
