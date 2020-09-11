@@ -3,7 +3,7 @@ package programmers.kakao_previous.blind_2018;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class N {
+public class N_3nd {
     public static void main(String[] args) {
 
     }
