@@ -53,13 +53,8 @@ public class p6497 {
                     }
                 }
             }
-
             System.out.println(allCost - mstCost);  // 전체 비용에서 - 이어진 곳을 제외한 것은 = 소등해도 괜찮은 곳  = 절약 최대치
-
-
         }
-
-
     }
 
     static boolean union(int a, int b) {
