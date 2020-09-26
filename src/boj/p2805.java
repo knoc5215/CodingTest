@@ -39,12 +39,8 @@ public class p2805 {
                 maxHeight = Math.max(maxHeight, mid);   // 절단기의 최대높이 갱신
                 left = mid + 1;
             }
-
-
         }
-
         System.out.println(maxHeight);
-
     }
 
     static long cut(long H) {
@@ -53,7 +49,6 @@ public class p2805 {
             if (tree > H) { // 나무의 높이 > 절단기의 높이 이면 잘라서 취한다
                 sum += (tree - H);
             }
-
         }
         return sum;
     }
