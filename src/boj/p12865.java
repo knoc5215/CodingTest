@@ -28,7 +28,6 @@ public class p12865 {
         }
 
         dp = new int[n + 1][k + 1]; //dp[n][k] = n번째 물건까지 k무게만큼 넣었을 때의 최대가치
-
         for (int i = 1; i <= n; i++) {  // 물건을 돌면서
             for (int j = 1; j <= k; j++) {
                 dp[i][j] = dp[i - 1][j]; // 기본적으로 이전 아이템의 가치를 저장한다.
@@ -38,18 +37,6 @@ public class p12865 {
                 }
             }
         }
-
         System.out.println(dp[n][k]);
-
-
-    }
-
-    static class Item {
-        int weight, value;
-
-        public Item(int weight, int value) {
-            this.weight = weight;
-            this.value = value;
-        }
     }
 }
