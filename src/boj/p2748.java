@@ -15,14 +15,12 @@ public class p2748 {
         fibList.add((long) 0);
         fibList.add((long) 1);
         if (n >= 2) {   // 피보나치 동작 조건
-            while (true) {
+            do {
                 int size = fibList.size();
                 long next = fibList.get(size - 2) + fibList.get(size - 1);
                 fibList.add(next);
 
-                if (fibList.size() == n + 1)
-                    break;
-            }
+            } while (fibList.size() != n + 1);
             System.out.println(fibList.get(fibList.size() - 1));
         } else {
             System.out.println(n);
