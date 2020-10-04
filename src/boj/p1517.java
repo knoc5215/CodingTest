@@ -36,6 +36,11 @@ public class p1517 {
                 sorted[idx++] = arr[j++];
                 cnt += (mid + 1 - i);   // 왼쪽 리스트의 값이 오른쪽 리스트의 값보다 큰 경우 왼쪽 list의 크기에 그 값의 index를 빼면 큰 수의 개수
                 // https://hoho325.tistory.com/136 참고
+                // arr[i] > arr[j] 이라면? 당연히 arr[i+1, i+2, ...] 도 arr[j]보다 큼
+                // 분할된 배열들은 각각 정렬된 상태임
+                // arr[i+2] > arr[i+1] > arr[i] > arr[j] 관계니까
+                // 실제 버블소트의 경우였으면, 모두 교환대상이니 cnt 증가시킬거니까 !!
+
             }
         }
 
