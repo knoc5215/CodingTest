@@ -30,10 +30,10 @@ public class p1967 {
         }
 
         visit = new boolean[n + 1];
-        DFS(0, 1);  // 루트는 항상 1 -> 항상 중간 point -> 반지름 계산하기 위한 기준점
+        DFS(0, 1);
 
         visit = new boolean[n + 1];
-        DFS(0, reverse);    // 현재 reverse = 반지름이 가장 긴 노드
+        DFS(0, reverse);
 
         System.out.println(max);
 
@@ -43,7 +43,7 @@ public class p1967 {
     static void DFS(int sum, int from) {
         if (max < sum) {
             max = sum;
-            reverse = from; // 최대값이 갱신된다 -> 반지름이 가장 길다 -> reverse 시작점 갱신
+            reverse = from;
         }
 
 
