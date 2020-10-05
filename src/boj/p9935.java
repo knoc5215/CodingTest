@@ -3,12 +3,49 @@ package boj;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Stack;
 
 public class p9935 {
     static String str;
     static String exploding;
 
     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        str = br.readLine();
+        exploding = br.readLine();
+        int len = exploding.length();
+
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < str.length(); i++) {
+            stack.push(str.charAt(i));
+
+            if (stack.size() >= len) {  // 폭발문자열 사이즈보다 크다면
+                boolean flag = true;
+                for (int j = 0; j < len; j++) {
+                    if (stack.get(stack.size() - len + j) != exploding.charAt(j)) { // 다르면
+                        flag = false;
+                        break;  // 종료
+                    }
+                }
+                if (flag) {
+                    for (int j = 0; j < len; j++) { // 폭발문자열 길이만큼 pop
+                        stack.pop();
+                    }
+                }
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Character character : stack) { // 폭발문자열을 제외한 나머지가 남는다
+            sb.append(character);
+        }
+
+        System.out.println(sb.length() > 0 ? sb : "FRULA");
+    }
+
+/*      char[]를 이용한 방법
+
+        public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         str = br.readLine();
         exploding = br.readLine();
@@ -24,20 +61,20 @@ public class p9935 {
 
         for (int i = 0; i < str.length(); i++) {
             ans[idx++] = str.charAt(i);
-            if (ans[idx - 1] == bomb[len - 1]) {    // 탐색중인 위치가 == 폭발문자열의 끝글자와 같다면
-                if (idx < len) continue;    // 43cavcxvx , 폭발은 C4 일때 --> idx = 0 = 문자4 일때 4, len - 1 = 1 = 문자4
-                boolean flag = false;
-                for (int j = 0; j < len; j++) {
-                    if (ans[idx - 1 - j] != bomb[len - 1 - j]) {    // 역으로 탐색하면서, 다르다면 break
-                        flag = true;
-                        break;
+            if (ans[idx - 1] == bomb[len - 1]) {
+                if (idx >= len) {
+                    boolean flag = false;
+                    for (int j = 0; j < len; j++) {
+                        if (ans[idx - 1 - j] != bomb[len - 1 - j]) {
+                            flag = true;
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        idx -= len;
                     }
                 }
-
-                if (!flag) {    // 폭발문자열을 발견했다면
-                    idx -= len; // 현재 idx에서 len을 뺀다 -> 폭발문자열 포인터만큼 제거
-                }
-
             }
         }
 
@@ -49,7 +86,5 @@ public class p9935 {
             }
             System.out.println(sb);
         }
-
-
-    }
+    }*/
 }
