@@ -10,4 +10,6 @@ gen
 .DS_Store
 out/
 src/.DS_Store
+src/goorm/nhn_2020
+src/programmers/test
 !/.idea/
