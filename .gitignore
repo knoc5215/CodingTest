@@ -12,4 +12,5 @@ out/
 src/.DS_Store
 src/goorm/nhn_2020
 src/programmers/test
+src/dataStructure
 !/.idea/
