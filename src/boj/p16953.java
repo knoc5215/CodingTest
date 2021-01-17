@@ -27,7 +27,7 @@ public class p16953 {
             ret = count;
         } else if (from < b) {
             solve(from * 2, count + 1);
-            solve(Long.parseLong(String.valueOf(from) + "1"), count + 1);
+            solve(Long.parseLong(from + "1"), count + 1);
         }
     }
 }
