@@ -7,7 +7,10 @@ import java.util.StringTokenizer;
 
 public class p1074 {
     static int N, r, c;
-    static int count = 0;
+    static int[] dx = {0, 0, 1, 1};
+    static int[] dy = {0, 1, 0, 1};
+
+    static int ans = 0;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -16,26 +19,41 @@ public class p1074 {
         r = Integer.parseInt(st.nextToken());
         c = Integer.parseInt(st.nextToken());
 
-        int len = (int) Math.pow(2, N);
-        int fromX = 0;
-        int fromY = 0;
 
-        search(fromX, fromY, len);
+        int size = (int) Math.pow(2, N);
+
+        checkArray(size, 0, 0, 0);
+
 
     }
 
-    static void search(int x, int y, int len) {
-        if (len == 1) {
-            if (x == r && y == c) {
-                System.out.println(count);
-            }
-            count++;
+    private static void checkArray(int n, int x, int y, int cnt) {
+
+        if (x > r || x + n <= r || y > c || y + n <= c) {   // 예상범위 밖이면 리턴
             return;
         }
-        int divide = len / 2;
-        search(x, y, divide);       // 1사분면
-        search(x, y + divide, divide);  // 2사분면
-        search(x + divide, y, divide);  // 3사분면
-        search(x + divide, y + divide, divide); // 4사분면
+        if (n == 2) {   // 2*2 사이즈까지 도달했을때
+
+            for (int i = 0; i < 4; i++) {   // 1~4 사분면 좌표값 계산
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+
+                if (nx == r && ny == c) {   // 찾고자 하는 좌표라면
+                    System.out.println(cnt + i);    // 1사분면이 i == 0 이니까 cnt 갱신해서 출력해준다
+                }
+            }
+            return;
+        }
+
+
+        int next = n / 2;   // 다음 분할 사이즈
+
+        checkArray(next, x, y, cnt);    // 1사분면
+        checkArray(next, x, y + next, cnt + (next * next)); // 2사분면
+        checkArray(next, x + next, y, cnt + (next * next * 2)); // 3사분면
+        checkArray(next, x + next, y + next, cnt + (next * next * 3)); //4사분면
+
     }
+
+
 }
