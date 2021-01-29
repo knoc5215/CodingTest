@@ -15,18 +15,19 @@ public class s2_MenuRenewal {
     }
 
     public static String[] solution(String[] orders, int[] course) {
-        String[] answer = {};
+        String[] answer;
         ArrayList<String> arrayList = new ArrayList<>();
 
         for (int s = 0; s < orders.length; s++) {
             String str = orders[s];
 
+            // s번 손님이 주문한 단푼 메뉴 조합에 대해서
             for (int i = 2; i <= str.length(); i++) {
                 char[] chars = str.toCharArray();
                 boolean[] visit = new boolean[chars.length];
                 int start = 0;
                 int n = chars.length;
-
+                // 최소 2가지 이상의 단품메뉴로 구성하기 위함
                 combination(orders.length, s, chars, visit, start, n, i);
             }
         }
@@ -34,16 +35,16 @@ public class s2_MenuRenewal {
         Iterator<String> itr = map.keySet().iterator();
         List<Node> list = new ArrayList<>();
         while (itr.hasNext()) {
-            String key = itr.next();
-            Integer[] arr = map.get(key);
+            String key = itr.next();    // 조합된 메뉴
+            Integer[] arr = map.get(key);   // 조합된 메뉴가 각 손님으로부터 주문된 조합인지 체크
             int using = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] > 0) {
-                    using++;    // 2명 이상의 손님으로부터 주문된 조합에 대해서만
+            for (Integer integer : arr) {
+                if (integer > 0) {
+                    using++;
                 }
             }
             if (using >= 2) {
-                Node node = new Node(key, using);
+                Node node = new Node(key, using);   // 최소 2명 이상의 손님으로부터 주문된 단품메뉴 조합에 대해서만 코스요리 메뉴 후보에 포함
                 list.add(node);
             }
         }
@@ -57,16 +58,16 @@ public class s2_MenuRenewal {
             }
         });
 
-        for (int i = 0; i < course.length; i++) {
-            int courseCnt = course[i];
-            List<Node> courseList = findCourseByCnt(list, courseCnt);
+        // 코스 메뉴 개수마다
+        for (int courseCnt : course) {
+            List<Node> courseList = findCourseByCnt(list, courseCnt);   //
             for (Node node : courseList) {
                 arrayList.add(node.str);
             }
         }
 
-        Collections.sort(arrayList);
-        answer = new String[arrayList.size()];
+        Collections.sort(arrayList);    // 코스요리 오름차순 정렬
+        answer = new String[arrayList.size()];  // 배열에 담아준다
         for (int i = 0; i < answer.length; i++) {
             answer[i] = arrayList.get(i);
         }
@@ -75,7 +76,7 @@ public class s2_MenuRenewal {
 
     private static List<Node> findCourseByCnt(List<Node> list, int courseCnt) {
         List<Node> resultList = new ArrayList<>();
-        int MAX = Integer.MIN_VALUE;
+        int MAX = Integer.MIN_VALUE;    // 가장 많이 함께 주문된 메뉴 구성
         for (Node node : list) {
             if (node.str.length() == courseCnt) {
                 MAX = Math.max(MAX, node.cnt);
@@ -85,7 +86,7 @@ public class s2_MenuRenewal {
 
         List<Node> returnList = new ArrayList<>();
         for (Node node : resultList) {
-            if (node.cnt == MAX) {
+            if (node.cnt == MAX) {  // 만약 가장 많이 함께 주문된 메뉴 구성이 여러 개라면, 모두 배열에 담아
                 returnList.add(node);
             }
         }
@@ -94,9 +95,9 @@ public class s2_MenuRenewal {
 
     private static void combination(int len, int index, char[] chars, boolean[] visit, int start, int n, int r) {
         if (r == 0) {
-            String menu = getCombiMenu(chars, visit, n);
-            if (!map.containsKey(menu)) {
-                Integer[] arr = new Integer[len];
+            String menu = getCombiMenu(chars, visit, n);    // nCr
+            if (!map.containsKey(menu)) {   // 해당 조합을 처음 뽑은 경우
+                Integer[] arr = new Integer[len];   // arr는 해당 조합에 대해서 각 손님들이 고를 수 있는지 체크
                 Arrays.fill(arr, 0);
                 arr[index]++;
                 map.put(menu, arr);
