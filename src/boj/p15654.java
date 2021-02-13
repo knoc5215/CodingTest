@@ -15,13 +15,14 @@ public class p15654 {
         M = sc.nextInt();
 
         arr = new int[N];
+        visit = new boolean[N];
         for (int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
+
         Arrays.sort(arr);
 
         out = new int[M];
-        visit = new boolean[N];
         DFS(0);
 
         System.out.println(stringBuilder);
