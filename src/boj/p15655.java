@@ -40,13 +40,10 @@ public class p15655 {
         }
 
         for (int i = start; i < N; i++) {
-            if (!visit[i]) {
-                visit[i] = true;
-                out[depth] = arr[i];
-                DFS(i + 1, depth + 1);
-                visit[i] = false;
-            }
+            out[depth] = arr[i];
+            DFS(i + 1, depth + 1);
         }
     }
-
 }
+
+
