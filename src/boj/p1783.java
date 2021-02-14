@@ -16,19 +16,16 @@ public class p1783 {
 
         int moveCnt = 0;
 
-        if (N == 1) {
+        if (N == 1)         // 제자리 카운트 1
             moveCnt = 1;
-        } else if (N == 2) {
-            moveCnt = (M - 1) / 2;
-            moveCnt = Math.min(moveCnt, 3);
-        } else if (M < 7) {
-            moveCnt = M - 1;
-            moveCnt = Math.max(moveCnt, 3);
-        } else {
-            moveCnt = 4 + M - 7;
-        }
+        else if (N == 2)    // N이 2일때 최대 얼마나 갈 수 있는지
+            moveCnt = Math.min(4, (M + 1) / 2);
+        else if (M < 7)     // 4가지 방법을 모두 사용했을 때 얼마나 갈 수 있는지
+            moveCnt = Math.min(4, M);
+        else                // 나머지 경우
+            moveCnt = M - 2;
 
-        System.out.println(moveCnt+1);
+        System.out.println(moveCnt);
 
 
     }
