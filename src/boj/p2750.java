@@ -3,18 +3,19 @@ package boj;
 import java.util.Scanner;
 
 public class p2750 {
-    static int[] arr;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        arr = new int[n];
+        int[] arr = new int[n]; // 5 2 3 4 1
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        sort(0, n - 1);
+//        selection_sort(arr);
+//        insertion_sort(arr);
+        bubble_sort(arr);
         for (int val : arr) {
             System.out.println(val);
         }
@@ -22,30 +23,48 @@ public class p2750 {
 
     }
 
-    static void sort(int low, int high) {
-        int i = low;
-        int j = high;
-        int pivot = arr[(i + j) / 2];
+    private static void bubble_sort(int[] arr) {
+        int len = arr.length;
 
-        while (i <= j) {
-            while (arr[i] < pivot)  // 피벗보다 큰거 찾기
-                i++;
-            while (pivot < arr[j])  // 피벗보다 작은거 찾기
-                j--;
-
-            if (i <= j) {   // 교환
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-
-                i++;
-                j--;
+        for (int i = len - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
+                }
             }
         }
-
-        if (low < j)        // 피벗보다 작은 부분 재귀호출
-            sort(low, j);
-        if (high > i)   // 피벗보다 큰 부분 재귀호출
-            sort(i, high);
     }
+
+    private static void selection_sort(int[] arr) {
+        int len = arr.length;
+
+        for (int i = len - 1; i >= 0; i--) {
+            for (int j = i; j > 0; j--) {
+                if (arr[j - 1] > arr[i]) {
+                    swap(arr, j - 1, i);
+                }
+            }
+        }
+    }
+
+    private static void insertion_sort(int[] arr) {
+        int len = arr.length;
+        for (int i = 1; i < len; i++) {
+            for (int j = i; j > 0; j--) {
+                if (arr[j - 1] > arr[j]) {
+                    swap(arr, j - 1, j);
+                }
+            }
+
+        }
+
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+
 }
