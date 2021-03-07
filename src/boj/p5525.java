@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class p5525 {
-    static int N, M, S;
+    static int N, M;
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(bufferedReader.readLine());
         M = Integer.parseInt(bufferedReader.readLine());
-        String S = bufferedReader.readLine();
 
+        String S = bufferedReader.readLine();
         String pattern = makeIOI();
 
         List<Integer> list = kmp(S, pattern);
